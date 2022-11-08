@@ -16,6 +16,7 @@ mongoose.connect("mongodb+srv://harsh:7534981251@projectnode.rzqgdbx.mongodb.net
 
 
 app.use('/', route)
+
 app.use((req,res)=>{
     res.status(404).send("request not found")
 })
